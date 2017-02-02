@@ -1,0 +1,16 @@
+
+IF CurrentVisu = '' THEN
+CurrentVisu := '';
+CurrentCaller := '';
+CurrentLanguage:='';
+END_IF
+IF RTGraphic_Init_Var THEN
+RTGraphic_Init_Var := FALSE;
+END_IF
+IF (ExecuteCommand('', 30) > 0) THEN
+RegisterVariable('CurrentVisu', '', ADR(CurrentVisu), 8);
+RegisterVariable('CurrentCaller', '', ADR(CurrentCaller), 8);
+RegisterVariable('CurrentLanguage', '', ADR(CurrentLanguage), 8);
+ExecuteCommand('', 33);
+END_IF
+

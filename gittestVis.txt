@@ -1,0 +1,2 @@
+0
+c:\program files\3s software\codesys v2.3\compile\gittestvis.txt

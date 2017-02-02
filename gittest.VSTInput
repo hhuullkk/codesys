@@ -1,0 +1,7 @@
+
+IF CurrentVisu = '' THEN
+		CurrentVisu := '';
+		CurrentCaller := '';
+		CurrentLanguage:='';
+	END_IF
+
